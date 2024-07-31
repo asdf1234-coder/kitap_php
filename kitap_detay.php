@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="kitap_detay.css" />
+    <title>kitap detay</title>
+    <link rel="stylesheet" type="text/css" href="kitapDetay.css"/>
 </head>
 <body>
     <?php
@@ -23,8 +23,19 @@
     <?php foreach($tum_kitaplar as $kitap): ?>
         <?php if ($kitap["id"] == $get_id): ?>
             <div class="container">
-                <div class="resim"><img src="img/<?php echo $kitap["resim"]?>"></div>
-                <div><?php echo $kitap["isim"]?></div>
+                <div class="img_container">
+                    <div class="resim"><img src="img/<?php echo $kitap["resim"]?>" width="100%"></div>
+                </div>
+                <div class="text_container">
+                    <div class="baslik">
+                        <div><?php echo $kitap["isim"]?></div>
+                    </div>
+                    <div class="yazar_yayinevi">
+                        <div class="yazar">yazar</div>
+                        <div class="yayinevi">yayınevi</div>
+                    </div>
+                    <div class="aciklama">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur dicta dignissimos quam a unde natus? Doloremque accusantium quae magni libero minus officiis corporis porro temporibus iusto culpa reprehenderit suscipit facilis sunt dolorem placeat quibusdam quasi nisi quis, est vel! Obcaecati, rerum voluptate amet hic odio repellat commodi excepturi consectetur corporis mollitia natus quam maxime eum eveniet sapiente fuga dicta animi autem. At quibusdam perferendis aliquid deleniti ut harum inventore similique facere reprehenderit magni ducimus maxime odit totam, accusamus natus dolores velit iure veritatis? Unde cumque quis provident deserunt velit.</div>
+                </div>
             </div>
         <?php endif; ?>
     <?php endforeach; ?>
