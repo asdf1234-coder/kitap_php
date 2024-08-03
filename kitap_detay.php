@@ -1,3 +1,4 @@
+
 <?php $get_id = $_GET["id"]?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +33,7 @@
                     </div>
                     <div class="yazar_yayinevi">
                         <div class="yazar">yazar</div>
-                        <div class="yayinevi">yayınevi</div>
+                        <div class="yayinevi"><?php echo $kitap["yayinevi"]?></div>
                     </div>
                     <div class="aciklama">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur dicta dignissimos quam a unde natus? Doloremque accusantium quae magni libero minus officiis corporis porro temporibus iusto culpa reprehenderit suscipit facilis sunt dolorem placeat quibusdam quasi nisi quis, est vel! Obcaecati, rerum voluptate amet hic odio repellat commodi excepturi consectetur corporis mollitia natus quam maxime eum eveniet sapiente fuga dicta animi autem. At quibusdam perferendis aliquid deleniti ut harum inventore similique facere reprehenderit magni ducimus maxime odit totam, accusamus natus dolores velit iure veritatis? Unde cumque quis provident deserunt velit.</div>
                 </div>
