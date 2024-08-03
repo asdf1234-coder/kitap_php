@@ -24,6 +24,11 @@
         <div class="anasayfa bosluk">Anasayfa</div>
         <div class="kitaplar bosluk">Tüm Kitaplar</div>
     </div>
+    <div class="yayinlar">
+        <a href = "yayin_filtre.php?yayin=A yayınevi"><div class="yayinevleri ay">A yaınevi</div></a>
+        <a href = "yayin_filtre.php?yayin=B yayınevi"><div class="yayinevleri">B yaınevi</div></a>
+        <a href = "yayin_filtre.php?yayin=C yayınevi"><div class="yayinevleri">C yaınevi</div></a>
+    </div>
     <div class="tum_kitaplar">
         <?php foreach($tum_kitaplar as $kitap): ?>
             <a href = "kitap_detay.php?id=<?php echo $kitap["id"]?>">
