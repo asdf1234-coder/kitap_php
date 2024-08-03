@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Anamakine: 127.0.0.1
--- Üretim Zamanı: 30 Tem 2024, 11:50:48
+-- Anamakine: localhost
+-- Üretim Zamanı: 03 Ağu 2024, 09:15:47
 -- Sunucu sürümü: 10.4.32-MariaDB
 -- PHP Sürümü: 8.2.12
 
@@ -30,18 +30,19 @@ SET time_zone = "+00:00";
 CREATE TABLE `kitaplar` (
   `id` int(11) NOT NULL,
   `isim` varchar(100) NOT NULL,
-  `resim` varchar(100) NOT NULL
+  `resim` varchar(100) NOT NULL,
+  `yayinevi` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Tablo döküm verisi `kitaplar`
 --
 
-INSERT INTO `kitaplar` (`id`, `isim`, `resim`) VALUES
-(1, 'faiz lobisi', 'faiz lobisi.jpg'),
-(2, 'mühendis ve hayat', 'mühendis ve hayat.jpg'),
-(3, 'temel ilkeler', 'temel ilkeler.jpg'),
-(4, 'mühendis ve hayat', 'mühendis ve hayat.jpg');
+INSERT INTO `kitaplar` (`id`, `isim`, `resim`, `yayinevi`) VALUES
+(1, 'faiz lobisi', 'faiz lobisi.jpg', 'A yayınevi'),
+(2, 'mühendis ve hayat', 'mühendis ve hayat.jpg', 'B yayınevi'),
+(3, 'temel ilkeler', 'temel ilkeler.jpg', 'C yayınevi'),
+(4, 'mühendis ve hayat', 'mühendis ve hayat.jpg', 'B yayınevi');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
